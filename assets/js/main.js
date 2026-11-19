@@ -205,8 +205,15 @@
       });
     }
 
+    const isTop = (c) => c.featured && c.badge === "الأكثر طلبًا";
+
     function apply() {
       let list = window.COURSES.slice();
+
+      // في العرض الافتراضي لا نكرّر «الأكثر طلبًا» (لها قسم مستقل أعلى الصفحة)
+      const isDefaultView =
+        state.year === "all" && state.subject === "all" && state.q === "";
+      if (isDefaultView) list = list.filter((c) => !isTop(c));
 
       if (state.year !== "all") list = list.filter((c) => String(c.year) === state.year);
       if (state.subject !== "all") list = list.filter((c) => c.subject === state.subject);
@@ -276,6 +283,15 @@
     render();
   }
 
+  /* ---------- 4.b الأكثر طلبًا (صفحة الدورات) ---------- */
+  function initTopCourses() {
+    const grid = $("#top-grid");
+    if (!grid || !window.COURSES) return;
+    grid.innerHTML = window.COURSES.filter((c) => c.featured && c.badge === "الأكثر طلبًا")
+      .map(courseCard)
+      .join("");
+  }
+
   /* ---------- 5. الدورات المختارة في الرئيسية ---------- */
   function initFeaturedCourses() {
     const grid = $("#featured-grid");
@@ -290,13 +306,13 @@
     const root = $("#stats");
     if (!root || !window.COURSES) return;
 
-    const paid = window.COURSES.filter((c) => c.price > 0).map((c) => c.price);
     const years = new Set(window.COURSES.filter((c) => c.year > 0).map((c) => c.year));
+    const subjects = new Set(window.COURSES.map((c) => c.subject));
 
     const values = {
       groups: window.COURSES.length,
+      subjects: subjects.size,
       free: window.COURSES.filter((c) => c.price === 0).length,
-      price: paid.length ? `${Math.min.apply(null, paid).toLocaleString("en-US")} دج` : "—",
       years: years.size,
     };
 
@@ -429,9 +445,9 @@
             <strong style="font-size:26px;color:var(--ink)">${esc(priceLabel(course))}</strong>
             <span style="font-size:13px;color:var(--muted)">${esc(course.priceNote || "")}</span>
           </div>
-          <a class="btn btn--block" href="contact.html">اطلب التفاصيل على إنستغرام</a>
+          <a class="btn btn--block" href="contact.html">اطلب تفاصيل الاشتراك</a>
           <p class="field__hint" style="text-align:center;margin-top:12px">
-            هذا موقع تعريفي — الاشتراك يتم عبر رسالة على إنستغرام.
+            هذا موقع تعريفي — الاشتراك يتم عبر إنستغرام أو البريد الإلكتروني.
           </p>
         </div>
         <div class="aside-card">
@@ -460,6 +476,7 @@
     initNav();
     initReveal();
     initStats();
+    initTopCourses();
     initFeaturedCourses();
     initCourseGrid();
     initCourseDetail();

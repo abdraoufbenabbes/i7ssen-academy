@@ -254,7 +254,8 @@ button { font-family: inherit; }
 
 .brand small {
   display: block;
-  font-size: 11.5px;
+  font-size: 10.5px;
+  letter-spacing: .12em;
   font-weight: 600;
   color: var(--muted);
   letter-spacing: 0;

@@ -17,9 +17,9 @@
     <div class="container site-header__inner">
       <a class="brand" href="index.html">
         <span class="brand__mark" aria-hidden="true">
-          <img src="assets/img/logo.svg" alt="">
+          <img src="assets/img/logo.png" alt="" onerror="this.onerror=null;this.src='assets/img/logo.svg'">
         </span>
-        <span>إحسان أكاديمي<small>i7ssen academy</small></span>
+        <span>إحسان أكاديمي<small>I7SSEN ACADEMY</small></span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">
@@ -55,8 +55,28 @@
       </div>
     </section>
 
-    <section class="section" style="padding-top:40px">
+    <!-- ======= الأكثر طلبًا (قسم منفصل) ======= -->
+    <section class="section" style="padding:48px 0 10px">
       <div class="container">
+        <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;max-width:none;margin-bottom:26px">
+          <div>
+            <span class="eyebrow">الأكثر طلبًا</span>
+            <h2 class="mb-0">الأكثر طلبًا الآن</h2>
+            <p style="margin-top:8px">دورتان تصلحان لكل السنوات، ويطلبهما الطلبة أكثر من غيرهما.</p>
+          </div>
+          <a class="btn btn--ghost btn--sm" href="guide.html">كيف تختار دورتك؟</a>
+        </div>
+        <div class="grid grid--2" id="top-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:48px">
+      <div class="container">
+
+        <div class="section-head" style="margin-bottom:22px">
+          <h2 style="font-size:26px;margin-bottom:6px">كل الدورات</h2>
+          <p style="margin:0">ابحث وصفِّ حسب السنة أو المقياس. المجانية معلّمة بوسم واضح.</p>
+        </div>
 
         <div class="filters">
           <div class="search-field">
@@ -64,7 +84,7 @@
               <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
             </svg>
             <label for="course-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">ابحث في الموديلات</label>
-            <input type="search" id="course-search" placeholder="ابحث بالمادة أو السنة أو اسم المدرّب…">
+            <input type="search" id="course-search" placeholder="ابحث باسم الدورة أو المقياس أو السنة…">
           </div>
 
           <div class="chips" id="course-chips" role="group" aria-label="تصفية حسب السنة الدراسية">
@@ -124,8 +144,8 @@
             <circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
           </svg>
           <p>
-            <strong>ملاحظة مهمة:</strong> هذا موقع تعريفي فقط. سعر الدورة الحالي
-            <strong>1,000 دج</strong>، والاشتراك يتم عبر رسالة على إنستغرام
+            <strong>ملاحظة مهمة:</strong> هذا موقع تعريفي فقط. لكل دورة سعرها المستقل،
+            والاشتراك يتم عبر إنستغرام أو البريد الإلكتروني
             من <a href="contact.html">صفحة التواصل</a>.
           </p>
         </div>
@@ -139,11 +159,11 @@
         <div class="footer__about">
           <a class="brand" href="index.html">
             <span class="brand__mark" aria-hidden="true">
-              <img src="assets/img/logo.svg" alt="">
+              <img src="assets/img/logo.png" alt="" onerror="this.onerror=null;this.src='assets/img/logo.svg'">
             </span>
-            <span>إحسان أكاديمي<small>i7ssen academy</small></span>
+            <span>إحسان أكاديمي<small>I7SSEN ACADEMY</small></span>
           </a>
-          <p>أكاديمية تعليمية تقدّم دورات على شكل موديلات مشروحة لطلبة كليات الطب، من السنة الأولى إلى الرابعة، مع حل الأسئلة داخل الشرح.</p>
+          <p>أكاديمية تعليمية تقدّم دورات على شكل موديلات مشروحة لطلبة كليات الطب، من السنة الأولى إلى ما بعد التخرج، مع حل الأسئلة داخل الشرح.</p>
         </div>
 
         <div>
@@ -183,7 +203,10 @@
       <div class="footer__bottom">
         <p>© إحسان أكاديمي — موقع تعريفي. جميع المعلومات للعرض التوضيحي.</p>
         <div class="socials">
-          <a href="https://www.instagram.com/i7ssen_academy/" target="_blank" rel="noopener" aria-label="إنستغرام إحسان أكاديمي">
+                    <a href="mailto:academyihssen@gmail.com" aria-label="البريد الإلكتروني">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+          </a>
+<a href="https://www.instagram.com/i7ssen_academy/" target="_blank" rel="noopener" aria-label="إنستغرام إحسان أكاديمي">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
           </a>
         </div>

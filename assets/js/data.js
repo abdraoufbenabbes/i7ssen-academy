@@ -58,8 +58,8 @@ const COURSES = [
     subject: "radiologie",
     language: "الفرنسية",
     icon: "scan",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     badge: "الأكثر طلبًا",
     badgeType: "primary",
     featured: true,
@@ -92,8 +92,8 @@ const COURSES = [
     subject: "anglais",
     language: "الإنجليزية",
     icon: "globe",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     badge: "الأكثر طلبًا",
     badgeType: "primary",
     featured: true,
@@ -128,8 +128,8 @@ const COURSES = [
     subject: "biochimie",
     language: "الإنجليزية",
     icon: "dna",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     badge: "باللغة الإنجليزية",
     badgeType: "accent",
     featured: true,
@@ -161,8 +161,8 @@ const COURSES = [
     subject: "anatomie",
     language: "الفرنسية",
     icon: "layers",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     featured: true,
     summary:
       "موديل على التشريح العام والعضوي: المصطلحات، الأطراف، الصدر والبطن — مع حل أسئلة الصور.",
@@ -223,8 +223,8 @@ const COURSES = [
     subject: "histologie",
     language: "الفرنسية",
     icon: "microscope",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على الأنسجة الأساسية والصورة المجهرية: الظهارة، الضام، العضلي والعصبي.",
     intro:
@@ -255,8 +255,8 @@ const COURSES = [
     subject: "physiologie",
     language: "الفرنسية",
     icon: "heart",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     featured: true,
     summary:
       "موديل على وحدة الجهاز القلبي التنفسي: الدورة القلبية، ECG، الميكانيكا التنفسية وتبادل الغازات.",
@@ -286,8 +286,8 @@ const COURSES = [
     subject: "physiologie",
     language: "الفرنسية",
     icon: "droplet",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على الكلية: الترشيح الكبيبي، إعادة الامتصاص، وتنظيم السوائل والتوازن الحمضي القاعدي.",
     intro:
@@ -318,8 +318,8 @@ const COURSES = [
     subject: "physiopathologie",
     language: "الفرنسية",
     icon: "pulse",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     featured: true,
     summary:
       "موديل ينتقل من الفسيولوجيا إلى المرض: قصور القلب، التصلّب العصيدي، واعتلالات التنفس.",
@@ -349,8 +349,8 @@ const COURSES = [
     subject: "semiologie",
     language: "الفرنسية",
     icon: "clipboard",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على الفحص السريري للقلب والرئة: الاستجواب، الإصغاء، وربط العلامة بالسبب.",
     intro:
@@ -410,8 +410,8 @@ const COURSES = [
     subject: "anapathologie",
     language: "الفرنسية",
     icon: "microscope",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على الآلية المرضية والصورة النسيجية: الآفات الخلوية، الالتهاب، والأورام.",
     intro:
@@ -440,8 +440,8 @@ const COURSES = [
     subject: "pharmacologie",
     language: "الفرنسية",
     icon: "pill",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على الدوائية والحركية الدوائية والمجموعات العلاجية الأساسية، بأسئلة تُحلّ داخله.",
     intro:
@@ -470,8 +470,8 @@ const COURSES = [
     subject: "parasitologie",
     language: "الفرنسية",
     icon: "microscope",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على الأوليات والديدان: دورة الحياة، التشخيص، والعلاج، مع صور مجهرية.",
     intro:
@@ -500,8 +500,8 @@ const COURSES = [
     subject: "semiologie",
     language: "الفرنسية",
     icon: "brain",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على الفحص العصبي خطوة بخطوة، ثم تجميع العلامات في متلازمات.",
     intro:
@@ -530,8 +530,8 @@ const COURSES = [
     subject: "radiologie",
     language: "الفرنسية",
     icon: "scan",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على قراءة صور الدماغ والحبل: نوع الصورة، الموقع، ثم التشخيص.",
     intro:
@@ -560,8 +560,8 @@ const COURSES = [
     subject: "biochimie",
     language: "الفرنسية",
     icon: "brain",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على كيمياء الجهاز العصبي: النواقل، استقلاب الطاقة الدماغي، والعلامات الحيوية.",
     intro:
@@ -592,8 +592,8 @@ const COURSES = [
     subject: "hematologie",
     language: "الفرنسية",
     icon: "droplet",
-    price: 1000,
-    priceNote: "سعر الدورة حاليًا",
+    price: null,
+    priceNote: "",
     summary:
       "موديل على أمراض الدم: الأنيميا، اللوكيميا، اضطرابات التخثر، ونقل الدم — بأسئلة تحاليل.",
     intro:
