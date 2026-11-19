@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="شعار إحسان أكاديمي">
+  <defs>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8CC2D2"/>
+      <stop offset="1" stop-color="#6BA9BC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- الشريط الفيروزي -->
+  <path d="M80 14 L108 9 C102 42 92 68 80 94 L60 80 C70 60 76 36 80 14 Z" fill="url(#teal)"/>
+  <path d="M74 106 L94 96 C92 118 84 136 68 148 C72 134 74 120 74 106 Z" fill="url(#teal)"/>
+
+  <!-- السمّاعة الطبية -->
+  <g fill="none" stroke="#A7AEB3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M113 46 C 116 66 118 80 126 92"/>
+    <path d="M150 58 C 146 76 137 86 128 92"/>
+    <path d="M127 92 C 135 116 133 138 117 152 C 99 167 74 164 64 146"/>
+    <path d="M64 146 C 58 136 56 130 58 124"/>
+    <circle cx="50" cy="111" r="15"/>
+    <circle cx="50" cy="111" r="5"/>
+  </g>
+  <circle cx="112" cy="42" r="6" fill="#A7AEB3"/>
+  <circle cx="152" cy="55" r="6" fill="#A7AEB3"/>
+</svg>
