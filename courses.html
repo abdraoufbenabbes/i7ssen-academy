@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الدورات المتاحة | إحسان أكاديمي</title>
+  <meta name="description" content="دورات إحسان أكاديمي: موديلات طبية مشروحة لكل سنة دراسية ومادة، مع حل الأسئلة داخل الشرح.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="assets/img/logo.svg" alt="">
+        </span>
+        <span>إحسان أكاديمي<small>i7ssen academy</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="التنقّل الرئيسي">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">الرئيسية</a></li>
+          <li><a class="nav__link" href="courses.html" aria-current="page">الدورات</a></li>
+          <li><a class="nav__link" href="guide.html">إرشادات الدراسة</a></li>
+          <li><a class="nav__link" href="faq.html">الأسئلة الشائعة</a></li>
+          <li><a class="nav__link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--sm header__cta" href="contact.html">اطلب معلومات</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li aria-current="page">الدورات</li>
+        </ol>
+        <h1>الدورات المتاحة</h1>
+        <p>
+          18 دورة، كل دورة موديل واحد يُشرح ويُحلّ داخله. اختر سنتك أو ابدأ بدورة عامة،
+          وافتح أي دورة لتقرأ <strong>المحتوى بالتفصيل</strong> قبل أي قرار.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px">
+      <div class="container">
+
+        <div class="filters">
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+            </svg>
+            <label for="course-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">ابحث في الموديلات</label>
+            <input type="search" id="course-search" placeholder="ابحث بالمادة أو السنة أو اسم المدرّب…">
+          </div>
+
+          <div class="chips" id="course-chips" role="group" aria-label="تصفية حسب السنة الدراسية">
+            <!-- تُبنى تلقائيًا -->
+          </div>
+
+          <div class="filters__row">
+            <span class="filters__count" id="course-count" aria-live="polite">…</span>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <div class="select-wrap">
+                <label for="course-subject" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">المادة</label>
+                <select id="course-subject">
+                  <option value="all">كل المواد</option>
+                  <option value="biochimie">الكيمياء الحيوية (Biochimie)</option>
+                  <option value="anatomie">التشريح (Anatomie)</option>
+                  <option value="biostatistique">الإحصاء الحيوي (Biostatistique)</option>
+                  <option value="histologie">الأنسجة (Histologie)</option>
+                  <option value="physiologie">الفسيولوجيا (Physiologie)</option>
+                  <option value="physiopathologie">الفيزيوباتولوجيا (Physiopathologie)</option>
+                  <option value="semiologie">السيميولوجيا (Sémiologie)</option>
+                  <option value="immunologie">المناعة (Immunologie)</option>
+                  <option value="anapathologie">التشريح المرضي (Anapathologie)</option>
+                  <option value="pharmacologie">علم الأدوية (Pharmacologie)</option>
+                  <option value="parasitologie">الطفيليات (Parasitologie)</option>
+                  <option value="radiologie">الأشعة (Radiologie)</option>
+                  <option value="anglais">الإنجليزية الطبية (Anglais médical)</option>
+                  <option value="hematologie">أمراض الدم (Hématologie)</option>
+                </select>
+              </div>
+
+              <div class="select-wrap">
+                <label for="course-sort" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">الترتيب</label>
+                <select id="course-sort">
+                  <option value="default">الترتيب الافتراضي</option>
+                  <option value="year">حسب السنة</option>
+                  <option value="free-first">المجانية أولًا</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid--3" id="course-grid">
+          <!-- تُبنى تلقائيًا من assets/js/data.js -->
+        </div>
+
+        <noscript>
+          <p style="text-align:center;margin-top:24px">
+            عرض الموديلات التفاعلي يحتاج تشغيل JavaScript. يمكنك مع ذلك تصفّح صفحات
+            الموديلات مباشرة عبر روابط مثل
+            <a href="course.html?id=anatomy-year-1">موديلات التشريح — السنة الأولى</a>.
+          </p>
+        </noscript>
+
+        <div class="callout" style="margin-top:38px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+          </svg>
+          <p>
+            <strong>ملاحظة مهمة:</strong> هذا موقع تعريفي فقط. سعر الدورة الحالي
+            <strong>1,000 دج</strong>، والاشتراك يتم عبر رسالة على إنستغرام
+            من <a href="contact.html">صفحة التواصل</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a class="brand" href="index.html">
+            <span class="brand__mark" aria-hidden="true">
+              <img src="assets/img/logo.svg" alt="">
+            </span>
+            <span>إحسان أكاديمي<small>i7ssen academy</small></span>
+          </a>
+          <p>أكاديمية تعليمية تقدّم دورات على شكل موديلات مشروحة لطلبة كليات الطب، من السنة الأولى إلى الرابعة، مع حل الأسئلة داخل الشرح.</p>
+        </div>
+
+        <div>
+          <h3>الموقع</h3>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="courses.html">الدورات</a></li>
+            <li><a href="guide.html">إرشادات الدراسة</a></li>
+            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>حسب السنة</h3>
+          <ul>
+            <li><a href="courses.html?year=1">السنة الأولى</a></li>
+            <li><a href="courses.html?year=2">السنة الثانية</a></li>
+            <li><a href="courses.html?year=3">السنة الثالثة</a></li>
+            <li><a href="courses.html?year=4">السنة الرابعة</a></li>
+            <li><a href="courses.html?year=0">دورات عامة</a></li>
+            <li><span style="color:#7fa19d">الخامسة والسادسة — قريبًا</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>معلومات</h3>
+          <ul>
+            <li><a href="faq.html#pricing">الأسعار</a></li>
+            <li><a href="faq.html#content">عن الدورات</a></li>
+            <li><a href="guide.html#tools">ما تحتاجه قبل البدء</a></li>
+            <li><a href="guide.html#schedule">خطة المراجعة</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© إحسان أكاديمي — موقع تعريفي. جميع المعلومات للعرض التوضيحي.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/i7ssen_academy/" target="_blank" rel="noopener" aria-label="إنستغرام إحسان أكاديمي">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

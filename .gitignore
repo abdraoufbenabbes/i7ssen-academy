@@ -1,0 +1,8 @@
+# أدوات الفحص المؤقتة (لا تُرفع للموقع)
+_*.py
+_logo_preview.png
+
+# نظام
+.DS_Store
+Thumbs.db
+desktop.ini
