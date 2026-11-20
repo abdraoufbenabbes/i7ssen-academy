@@ -378,11 +378,15 @@ button { font-family: inherit; }
 
 .hero h1 {
   color: #fff;
-  font-size: clamp(32px, 4.4vw, 52px);
-  line-height: 1.22;
+  font-size: clamp(28px, 4.2vw, 48px);
+  line-height: 1.24;
   margin-bottom: 20px;
-  letter-spacing: -1px;
+  letter-spacing: -.5px;
+  text-wrap: balance;
 }
+
+.br-lg { display: none; }
+@media (min-width: 980px) { .br-lg { display: inline; } }
 
 .hero h1 em {
   font-style: normal;

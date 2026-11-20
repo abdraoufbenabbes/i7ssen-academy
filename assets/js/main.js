@@ -248,9 +248,13 @@
       const list = apply();
 
       if (countEl) {
-        countEl.textContent = list.length
-          ? `عرض ${list.length} ${list.length === 1 ? "دورة" : "دورات"}`
-          : "لا توجد نتائج";
+        const n = list.length;
+        const label =
+          n === 1 ? "دورة واحدة"
+          : n === 2 ? "دورتان"
+          : n >= 3 && n <= 10 ? `${n} دورات`
+          : `${n} دورة`;
+        countEl.textContent = n ? `عرض ${label}` : "لا توجد نتائج";
       }
 
       if (!list.length) {
